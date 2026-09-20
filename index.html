@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trom Omega | Videography & Photography</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f5b400;
+        }
+
+        section {
+            padding: 70px 20px;
+        }
+
+        .hero {
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+                url("images/portfolio-2.png") center/cover no-repeat;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin: 0 0 10px;
+        }
+
+        .tagline {
+            font-size: 28px;
+            font-weight: bold;
+            color: #f5b400;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .book-button {
+            display: inline-block;
+            background: #f5b400;
+            color: #111;
+            padding: 16px 30px;
+            margin-top: 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .book-button:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #f5b400;
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .about-text {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .service-card {
+            background: #222;
+            padding: 30px 20px;
+            border-radius: 12px;
+        }
+
+        .service-card h3 {
+            color: #f5b400;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .portfolio img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        #contact {
+            background: #222;
+        }
+
+        footer {
+            padding: 25px;
+            background: #000;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .hero {
+                min-height: 500px;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .tagline {
+                font-size: 22px;
+            }
+
+            .services,
+            .portfolio {
+                grid-template-columns: 1fr;
+            }
+
+            .portfolio img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <h1>TROM OMEGA</h1>
+
+        <p class="tagline">We Capture Your Memories</p>
+
+        <p>
+            Professional videography and photography for
+            music videos, weddings and documentaries.
+        </p>
+
+        <a class="book-button"
+           href="https://wa.me/265997975066?text=Hello%20Trom%20Omega,%20I%20would%20like%20to%20make%20a%20booking.">
+            BOOK NOW
+        </a>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Trom Omega</h2>
+
+        <p class="about-text">
+            Trom Omega is a creative videography service dedicated
+            to capturing important memories through professional
+            videos and photography.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="services">
+
+            <div class="service-card">
+                <h3>🎵 Music Videos</h3>
+                <p>
+                    Professional video production for artists
+                    and musicians.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>💍 Weddings</h3>
+                <p>
+                    Capturing beautiful wedding memories
+                    that last a lifetime.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>🎬 Documentaries</h3>
+                <p>
+                    Creative documentary filming and storytelling
+                    for important stories.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+
+        <div class="portfolio">
+
+            <img src="images/portfolio-1.png"
+                 alt="Trom Omega portfolio image">
+
+            <img src="images/portfolio-2.png"
+                 alt="Trom Omega portfolio image">
+
+            <img src="images/portfolio-3.png"
+                 alt="Trom Omega portfolio image">
+
+            <img src="images/portfolio-4.png"
+                 alt="Trom Omega portfolio image">
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Trom Omega</h2>
+
+        <p>Ready to capture your special moments?</p>
+
+        <p>📱 WhatsApp: 0997975066</p>
+
+        <a class="book-button"
+           href="https://wa.me/265997975066?text=Hello%20Trom%20Omega,%20I%20would%20like%20to%20make%20a%20booking.">
+            CONTACT US ON WHATSAPP
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Trom Omega. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
